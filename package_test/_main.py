@@ -1,2 +1,2 @@
-def hello_from_package():
-    return "Hello from Package!"
+def hello_from_test_package():
+    return "Hello from Test Package!"
