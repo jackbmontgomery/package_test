@@ -6,9 +6,15 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
 
-[tool.setuptools]
-packages = ["package_test"]
+# [tool.setuptools]
+# packages = ["package_test"]
+#
+# [build-system]
+# requires = ["setuptools>=61", "wheel"]
+# build-backend = "setuptools.build_meta"
 
-[build-system]
-requires = ["setuptools>=61", "wheel"]
-build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["package_test*"]
+exclude = []
+namespaces = false
